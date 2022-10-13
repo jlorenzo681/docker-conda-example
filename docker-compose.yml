@@ -1,0 +1,8 @@
+services:
+  conda:
+    build: .
+    container_name: container_name
+    volumes:
+      - .:/app
+    ports:
+      - "8080:80"
